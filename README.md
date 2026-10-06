@@ -2,6 +2,8 @@
 
 适用于雨课堂视频课程页的浏览器用户脚本，当前版本 **1.5.4**。提供连续播放、完成度验证、完成后切换下一视频，以及断网暂停和有限恢复。
 
+**[点击安装脚本](https://github.com/WhiteVolcanoRestaurant/yuketang-player-helper/raw/refs/heads/main/%E9%9B%A8%E8%AF%BE%E5%A0%82%E6%92%AD%E6%94%BE%E6%8C%89%E9%92%AE%E5%8A%A9%E6%89%8B.user.js)** · [详细使用说明](./使用说明.md)
+
 ## 安装
 
 1. 在电脑浏览器中安装用户脚本管理器，例如 Tampermonkey。
