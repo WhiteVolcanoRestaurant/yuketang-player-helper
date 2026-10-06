@@ -1,0 +1,17 @@
+# 本地历史版本、重复副本及第三方平台参考源码
+原始脚本-1.1.txt
+脚本备份-*.txt
+目前的脚本.txt
+player-source.js
+项目参考.txt
+
+# 编辑器、依赖及临时文件
+node_modules/
+.vscode/
+.idea/
+*.log
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
