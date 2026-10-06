@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         雨课堂播放按钮助手（自动切课验证版）
 // @namespace    local.yuketang.click-player
-// @version      1.5.4
+// @version      1.5.5
 // @description  完成后切课；漏记整段补播一次；断网暂停及有限恢复；弹窗后手动继续。
-// @match        https://www.yuketang.cn/ai-workspace/lms-graph/*
+// @match        https://*.yuketang.cn/ai-workspace/lms-graph/*
 // @run-at       document-idle
 // @grant        none
 // @noframes
@@ -19,7 +19,7 @@
   box.id = 'ykt-click-helper';
   box.style.cssText = 'position:fixed;right:16px;bottom:16px;z-index:2147483647;background:white;color:#222;padding:12px;border:1px solid #aaa;border-radius:8px;max-width:360px;font:14px/1.5 sans-serif';
   const title = document.createElement('strong');
-  title.textContent = '雨课堂助手 · 1.5.4 远程操作兼容版';
+  title.textContent = '雨课堂助手 · 1.5.5 远程操作兼容版';
   const status = document.createElement('div');
   status.textContent = '完成度 100% 或显示“已完成”后切课；请展开目录并保持标签页静音。';
   const start = document.createElement('button');
@@ -144,7 +144,7 @@
   function inspect() {
     const v = video();
     const completion = completionState(v);
-    return { version: '1.5.4', phase: session?.phase || 'stopped',
+    return { version: '1.5.5', phase: session?.phase || 'stopped',
       pageEligible: pageVisible(),
       switchEvidence: session?.switchEvidence || null,
       recoveryAttempts: session?.attempts || 0,
